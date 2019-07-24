@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('ubuntu-r-webfont.woff2') format('woff2'),
+         url('ubuntu-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#table th, #table td {
+    width: auto;
+    text-align: left;
+    font-family: "ubuntu";
+    color: #555555;
+    border: 1px solid gray;
+    background-color: #dddddd;
+    height: 32px;
+    padding: 0px 10px;
+    font-size: 14.6667px;
+    line-height: 17px;
+}
+input[type="text"] {
+    width: calc(100% - 18px);
+}

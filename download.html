@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<title>Movie Server</title>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script>var socket = io('http://localhost:8080');</script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/download.js"></script>
+</head>
+
+<body>
+    <table id="table" cellspacing="0px">
+        <tbody>
+            <tr>
+                <th style="padding: 0px"><input type="text" placeholder="Search Query" id="search"></th>
+                <th><button onclick='search()'>Search!</button></th>
+            </tr>
+            <tr id="loading" hidden>
+                <th colspan="2">Loading...</th>
+            </tr>
+            <tr id="selectResult" hidden>
+                <th colspan="2">Select a result!</th>
+            </tr>
+        </tbody>
+        <tbody id="results">
+
+        </tbody>
+        <tbody id="options" hidden>
+            <tr>
+                <th style="border-right: 0px"><button onclick='download()'>Download!</button></th>
+                <th style="border-left: 0px"></th>
+            </tr>
+            <tr id="status" hidden>
+                <th colspan="2">Loading...</th>
+            </tr>
+        </tbody>
+        <tbody id="files">
+
+        </tbody>
+    </table>
+</body>
